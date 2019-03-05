@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+import './hour.css';
+import Hour from './hour';
+import Minute from './minute';
+import Second from './second';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      
+      <div class="flex-container">
+  <div> <Hour/></div>
+ 
+  <div> <Minute/></div>
+  
+  <div>   <Second/></div>  
+</div>
+<div class="flex-container">
+  <div className="text"> <p>Hour</p></div>
+  <div className="text"> <p>Minute</p></div>
+  <div className="text">  <p> Second</p></div>  
+</div>
+      
+      
+  
       </div>
     );
   }

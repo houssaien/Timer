@@ -1,0 +1,16 @@
+.hour_time{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.flex-container{
+    display: flex;
+  
+  
+   justify-content: space-around;
+}
+
+.text{
+    color: gray;
+}
